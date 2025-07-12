@@ -10,7 +10,7 @@ export default function AccessToken() {
   if (!session) {
     return (
       <div>
-        <p>Hello You are not signed in.</p>
+        <p>You are not signed in.</p>
       </div>
     );
   }

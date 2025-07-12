@@ -4,7 +4,8 @@ import * as React from "react"
 import Link from "next/link"
 import { Menu, X, CircleHelpIcon, CircleCheckIcon, CircleIcon } from "lucide-react"
 import { useState } from "react"
-
+import logo from "../assets/logo.jpg"
+import Image from "next/image"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -56,8 +57,9 @@ export default function Navbar() {
     <nav className="bg-white border-b shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         {/* Brand */}
-        <Link href="/" className="text-xl font-bold text-blue-600">
-          Nitya Technologies 
+        <Link href="/" className="flex items-center space-x-2">
+          <Image src={logo} alt="logo" className="h-10 w-10" />
+          <span className="text-xl font-bold text-blue-600">Nitya Technologies</span>
         </Link>
 
         {/* Desktop Menu */}
