@@ -8,18 +8,13 @@ export default function AccessToken() {
   if (status === "loading") return <div>Loading...</div>;
 
   if (!session) {
-    return (
-      <div>
-        <p>You are not signed in.</p>
-      </div>
+    return (""
     );
   }
 
   return (
     <div>
       <p>Welcome, {session.user?.name}</p>
-      <img src={session.user?.image|| ""} alt="User Image" className="h-12 w-12 rounded-full" />
-      <p>{session.user?.email}</p>
     </div>
   );
 }

@@ -16,41 +16,43 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import LoginBtn from "./login-btn"
+import { useSession, signIn, signOut } from "next-auth/react";
 
 const components = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description: "A modal dialog that interrupts the user with important content and expects a response.",
+    title: "Reactjs",
+    href: "https://react.dev/",
+    description: "ReactJS a JavaScript library building fast, interactive UI using reusable component",
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description: "For sighted users to preview content available behind a link.",
+    title: "Nextjs",
+    href: "https://nextjs.org/",
+    description: "Next.js is a powerful React framework for building fast, scalable web applications.",
   },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    title: "Python",
+    href: "https://www.python.org/downloads/",
+    description: "Python is a high-level, interpreted programming language.",
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    title: "PHP",
+    href: "https://www.php.net/downloads.php",
+    description: "PHP is a open-source scripting language for create dynamic web pages.",
   },
   {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description: "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    title: "MySQL",
+    href: "https://www.mysql.com/",
+    description: "MySQL is a widely-used open-source relational database management system.",
   },
   {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    title: "Nodejs",
+    href: "https://nodejs.org/",
+    description: "Used for APIs, real-time apps, and backend services",
   },
 ]
 
 export default function Navbar() {
+  const { data: session, status } = useSession();
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -59,7 +61,7 @@ export default function Navbar() {
         {/* Brand */}
         <Link href="/" className="flex items-center space-x-2">
           <Image src={logo} alt="logo" className="h-10 w-10" />
-          <span className="text-xl font-bold text-blue-600">Nitya Technologies</span>
+          <span className="text-xl font-bold">Satyam Malviya</span>
         </Link>
 
         {/* Desktop Menu */}
@@ -67,37 +69,42 @@ export default function Navbar() {
           <NavigationMenu>
             <NavigationMenuList className="flex gap-4">
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Home</NavigationMenuTrigger>
+                <NavigationMenuTrigger>About me</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] p-4">
                     <li className="row-span-3">
                       <NavigationMenuLink asChild>
                         <a
                           className="flex h-full w-full flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                          href="/"
-                        >
-                          <div className="mt-4 mb-2 text-lg font-medium">shadcn/ui</div>
+                          >
+                          <Image
+                          src="https://media.licdn.com/dms/image/v2/D5603AQEob_wmo1m1ZA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1683043900626?e=1758153600&v=beta&t=e_nLf0fHnouiBW1vhWviOUMSLfG1bTX25VIPYpUOAhE"
+                          alt=""
+                          width={800}
+                          height={800}
+                          />
+                          <div className="mt-4 mb-2 text-lg font-medium">Satyam Malviya</div>
                           <p className="text-muted-foreground text-sm leading-tight">
-                            Beautifully designed components built with Tailwind CSS.
+                            Software Engineer
                           </p>
-                        </a>
+                          </a>
                       </NavigationMenuLink>
                     </li>
-                    <ListItem href="/docs" title="Introduction">
-                      Re-usable components built using Radix UI and Tailwind CSS.
+                    <ListItem href="https://www.linkedin.com/in/satyammalviya15/" title="Linkdin">
+                      A dedicated space where you can explore my Achievements.
                     </ListItem>
-                    <ListItem href="/docs/installation" title="Installation">
-                      How to install dependencies and structure your app.
+                    <ListItem href="https://github.com/satyammalviya15" title="Github">
+                      A curated showcase of the projects, applications, and tools I’ve built
                     </ListItem>
-                    <ListItem href="/docs/primitives/typography" title="Typography">
-                      Styles for headings, paragraphs, lists...etc
+                    <ListItem href="https://drive.google.com/file/d/1IpQrw-jIGNMUr8i_WpK48LNE2pgn45dF/view?usp=sharing" title="Resume">
+                     A reflection of my personal and professional journey 
                     </ListItem>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+                <NavigationMenuTrigger>Technologies</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px] p-4">
                     {components.map((component) => (
@@ -114,6 +121,16 @@ export default function Navbar() {
                   <LoginBtn/>
                 </NavigationMenuLink>
               </NavigationMenuItem>
+
+              {session?.user?.image && (
+        <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+          <img
+            src={session.user.image}
+            alt={session.user.email || "User"}
+            className="h-10 w-10 rounded-full object-cover"
+          />
+        </NavigationMenuLink>
+      )}
             </NavigationMenuList>
           </NavigationMenu>
         </div>
@@ -130,10 +147,10 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden px-4 py-2 space-y-2 bg-white border-t">
           <MobileNavLink href="/">Home</MobileNavLink>
-          <MobileNavLink href="/notes">Notes</MobileNavLink>
-          <MobileNavLink href="/students">Students</MobileNavLink>
-          <MobileNavLink href="/faculty">Faculty</MobileNavLink>
-          <MobileNavLink href="/docs">Docs</MobileNavLink>
+          <MobileNavLink href="https://www.linkedin.com/in/satyammalviya15/">Linkdin</MobileNavLink>
+          <MobileNavLink href="https://github.com/satyammalviya15">Github</MobileNavLink>
+          <MobileNavLink href="https://drive.google.com/file/d/1IpQrw-jIGNMUr8i_WpK48LNE2pgn45dF/view?usp=sharing">Resume</MobileNavLink>
+          <MobileNavLink href="/about">About</MobileNavLink>
         </div>
       )}
     </nav>
