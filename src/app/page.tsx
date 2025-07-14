@@ -5,6 +5,7 @@ import AcessToken from "../../component/accessToken";
 import LoginBtn from "../../component/login-btn";
 import {NewCarousel} from "../../component/NewCarousel";
 import { BottomNavbar } from "../../component/BottomNavbar";
+import Footer from "../../component/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <BottomNavbar/>
       <NewCarousel/>
       <AcessToken/>
+      <Footer/>
     </>
   );
 }
