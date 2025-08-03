@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Satyam Malviya – Full Stack Developer
 
-## Getting Started
+Detail-oriented and enthusiastic Computer Science graduate from Rewa Engineering College (RGPV), with hands-on experience in building full-stack web applications and mobile apps. Skilled in React.js, Node.js, MongoDB, Python, Next.js, and more.
 
-First, run the development server:
+Key Projects:
+1. Code Learn – A Udemy-like full-stack education platform with React, MongoDB, Tailwind.
+2. AI Email Template Builder – Built with Next.js and Gemini API for smart email generation.
+3. Hostel Management System – A PHP + MySQL based system for student & worker management.
+4. Emergency SOS App – Android app with real-time location sharing and emergency alerts.
+5. Jarvis AI Assistant – Python-based voice-controlled virtual assistant using OpenAI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+GitHub: https://github.com/satyammalviya15
+LinkedIn: https://www.linkedin.com/in/satyammalviya15/
+Email: satyammalviya281@gmail.com
+Phone: +91 9644151109
+Location: Barwaha, Madhya Pradesh
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Passionate about building scalable applications and contributing to innovative tech solutions.

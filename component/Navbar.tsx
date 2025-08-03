@@ -4,7 +4,7 @@ import * as React from "react"
 import Link from "next/link"
 import { Menu, X, CircleHelpIcon, CircleCheckIcon, CircleIcon } from "lucide-react"
 import { useState } from "react"
-import logo from "../assets/logo.jpg"
+import logo from "../assets/web-traffic.png"
 import Image from "next/image"
 import {
   NavigationMenu,
