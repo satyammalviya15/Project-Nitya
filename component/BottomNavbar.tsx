@@ -55,36 +55,35 @@ export function BottomNavbar() {
           <NavigationMenuList className="flex flex-wrap justify-center gap-2 md:gap-4">
             <NavigationMenuItem>
               <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                <Link href="/reactjs">Reactjs</Link>
+                <Link href="https://forever-pi-rouge.vercel.app" target="_blank" >ForeverShop</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
               <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                <Link href="/nextjs">Nextjs</Link>
+                <Link href="https://code-learn-ecru.vercel.app" target="_blank" >CodeLearn</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
               <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                <Link href="/python">Python</Link>
+                <Link href="https://project-code-learn-x.vercel.app" target="_blank">CodeLearn-X</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
               <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                <Link href="/php">PHP</Link>
+                <Link href="https://www.natrajtech.com" target="_blank" >NatrajTech</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
-
            <NavigationMenuItem>
               <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                <Link href="/mysql">MySQL</Link>
+                <Link href="https://github.com/satyammalviya15/Project-Jarvis">Jarvis</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                <Link href="/cpp">C++</Link>
+                <Link href="https://github.com/satyammalviya15/phphosteldbms">CollegeDBMS</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>

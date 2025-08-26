@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['media.licdn.com'],
   },
+  devIndicators: false
 };
 
 export default nextConfig;
