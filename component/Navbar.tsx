@@ -96,7 +96,7 @@ export default function Navbar() {
                     <ListItem href="https://github.com/satyammalviya15" title="Github">
                       A curated showcase of the projects, applications, and tools I’ve built
                     </ListItem>
-                    <ListItem href="https://drive.google.com/file/d/1IpQrw-jIGNMUr8i_WpK48LNE2pgn45dF/view?usp=sharing" title="Resume">
+                    <ListItem href="https://drive.google.com/file/d/19haEcC_8ckgZwb0nqUJTUnWpEXNkBu_4/view?usp=sharing" title="Resume">
                      A reflection of my personal and professional journey 
                     </ListItem>
                   </ul>
@@ -149,7 +149,7 @@ export default function Navbar() {
           <MobileNavLink href="/">Home</MobileNavLink>
           <MobileNavLink href="https://www.linkedin.com/in/satyammalviya15/">Linkdin</MobileNavLink>
           <MobileNavLink href="https://github.com/satyammalviya15">Github</MobileNavLink>
-          <MobileNavLink href="https://drive.google.com/file/d/1EiZ4iEjDvCrRkryBG9B-TAZzLGwNG3aE/view?usp=sharing">Resume</MobileNavLink>
+          <MobileNavLink href="https://drive.google.com/file/d/19haEcC_8ckgZwb0nqUJTUnWpEXNkBu_4/view?usp=sharing">Resume</MobileNavLink>
           <MobileNavLink href="/about">About</MobileNavLink>
         </div>
       )}
