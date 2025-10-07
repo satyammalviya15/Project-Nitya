@@ -67,6 +67,18 @@ export function BottomNavbar() {
 
             <NavigationMenuItem>
               <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                <Link href="https://wonder-lust-eosin.vercel.app" target="_blank" >WonderLust</Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                <Link href="https://pie-talk.vercel.app" target="_blank" >PieTalk</Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
                 <Link href="https://project-code-learn-x.vercel.app" target="_blank">CodeLearn-X</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -76,6 +88,7 @@ export function BottomNavbar() {
                 <Link href="https://www.natrajtech.com" target="_blank" >NatrajTech</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
+
            <NavigationMenuItem>
               <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
                 <Link href="https://github.com/satyammalviya15/Project-Jarvis">Jarvis</Link>
