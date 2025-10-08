@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Navbar/>
-      <BottomNavbar/>
+      {/* <BottomNavbar/> */}
       <Python/>
       <Footer/>
     </>

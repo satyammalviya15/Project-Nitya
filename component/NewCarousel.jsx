@@ -23,8 +23,9 @@ export function NewCarousel() {
 
   return (
     <div id="Home" className="relative px-4 py-6">
+      <h1 className="text-2xl font-bold mb-6 text-center">My Technologies</h1>
       <Carousel
-        className="w-full"
+        className="w-[100%]"
         opts={{
           align: "center",
           loop: true,
@@ -54,8 +55,8 @@ export function NewCarousel() {
           ))}
         </CarouselContent>
 
-        <CarouselPrevious className="z-10" />
-        <CarouselNext className="z-10" />
+        {/* <CarouselPrevious className="z-10" />
+        <CarouselNext className="z-10" /> */}
       </Carousel>
     </div>
   )

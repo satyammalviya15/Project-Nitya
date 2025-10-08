@@ -50,7 +50,7 @@ const GitHubRepos: React.FC<{ username: string }> = ({ username }) => {
       (repo.description && repo.description.toLowerCase().includes(searchQuery.toLowerCase()))
   );
 
-  const displayedRepos = showAll ? filteredRepos : filteredRepos.slice(0, 3);
+  const displayedRepos = showAll ? filteredRepos : filteredRepos.slice(0, 6);
 
   if (loading) return <p className="text-center text-sm">Loading repositories...</p>;
   if (error) return <p className="text-center text-red-600">{error}</p>;
