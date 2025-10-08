@@ -124,13 +124,11 @@ export default function Navbar() {
 
               {session?.user?.image && (
         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-          <>
           <img
             src={session.user.image}
             alt={session.user.email || "User"}
             className="h-10 w-10 rounded-full object-cover"
           />
-          </>
         </NavigationMenuLink>
       )}
             </NavigationMenuList>

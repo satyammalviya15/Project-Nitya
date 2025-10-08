@@ -10,6 +10,7 @@ import GitHubRepos from "../../component/GithubRepos";
 import AboutCompiler from "../../component/AboutCompiler";
 import WebsiteViewer from "../../component/WebsiteViewer";
 import AutoPopup from "../../component/AutoPopup";
+import CertificatesSection from "../../component/CertificatesSection";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <WebsiteViewer/>
       <GitHubRepos username="satyammalviya15"/>
       <NewCarousel/>
+      <CertificatesSection/>
       <Footer/>
     </>
   );
