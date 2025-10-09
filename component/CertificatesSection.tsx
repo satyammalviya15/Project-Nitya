@@ -26,17 +26,14 @@ const certificates = [
     issuer: "TCS ION",
     date: "Mar 2024",
     url: "https://drive.google.com/file/d/17wCw5oBM1xjyqRrakskcB5BXVj_QWf95/preview",
-  }
+  },
 ];
 
 const CertificatesSection: React.FC = () => {
   return (
     <section className="py-12 bg-gray-50 dark:bg-[#1e1e1e] w-full">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
-          My Certificates
-        </h2>
-
+        <h1 className="text-2xl font-bold mb-6 text-center">My Certificates</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {certificates.map((cert, index) => (
             <div
