@@ -78,7 +78,7 @@ export default function Navbar() {
                           className="flex h-full w-full flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                           >
                           <Image
-                          src="https://media.licdn.com/dms/image/v2/D5603AQEob_wmo1m1ZA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1683043900626?e=1758153600&v=beta&t=e_nLf0fHnouiBW1vhWviOUMSLfG1bTX25VIPYpUOAhE"
+                          src="https://media.licdn.com/dms/image/v2/D4D35AQE7qx3h9ttw0w/profile-framedphoto-shrink_400_400/B4DZbKkT55GYAc-/0/1747155238844?e=1761033600&v=beta&t=UfodEwR-Y6PPUE5oNPDuiFPme5Ro4Km4h1TgClz4Gwk"
                           alt=""
                           width={800}
                           height={800}
