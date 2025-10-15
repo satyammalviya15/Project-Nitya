@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link href="/dist/styles.css" rel="stylesheet"></link>
+        <meta name="google-site-verification" content="bOFwGx2Eb0Qf1rni0VePuUqjoW0WNVE5PsLRmhykFQo" />
       </head>
       <body>
         <Providers>
