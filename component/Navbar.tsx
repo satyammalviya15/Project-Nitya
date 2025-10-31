@@ -149,7 +149,7 @@ export default function Navbar() {
           <MobileNavLink href="/">Home</MobileNavLink>
           <MobileNavLink href="https://www.linkedin.com/in/satyammalviya15/">Linkdin</MobileNavLink>
           <MobileNavLink href="https://github.com/satyammalviya15">Github</MobileNavLink>
-          <MobileNavLink href="https://drive.google.com/file/d/19haEcC_8ckgZwb0nqUJTUnWpEXNkBu_4/view?usp=sharing">Resume</MobileNavLink>
+          <MobileNavLink href="https://drive.google.com/file/d/1qqJq-ieQ5h_VciimGf1GkkCEEHyevwy7/view?usp=sharing">Resume</MobileNavLink>
           <MobileNavLink href="/about">About</MobileNavLink>
         </div>
       )}
