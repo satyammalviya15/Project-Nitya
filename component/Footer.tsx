@@ -47,7 +47,7 @@ export default function Footer() {
                 <Linkedin className="h-5 w-5 text-gray-700" />
               </a>
               <a 
-                href="https://drive.google.com/file/d/1EiZ4iEjDvCrRkryBG9B-TAZzLGwNG3aE/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1qqJq-ieQ5h_VciimGf1GkkCEEHyevwy7/view?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
