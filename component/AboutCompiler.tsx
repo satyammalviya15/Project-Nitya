@@ -99,7 +99,7 @@ const AboutCompiler: React.FC = () => {
 
           {/* Download Resume Button */}
           <a
-            href="https://drive.google.com/file/d/19haEcC_8ckgZwb0nqUJTUnWpEXNkBu_4/view?usp=sharing"
+            href="https://drive.google.com/file/d/1qqJq-ieQ5h_VciimGf1GkkCEEHyevwy7/view?usp=sharing"
             download
             // className="mt-4 inline-flex items-center px-4 py-2 bg-indigo-500 text-white text-sm font-medium rounded hover:bg-indigo-600 transition-colors"
           >
